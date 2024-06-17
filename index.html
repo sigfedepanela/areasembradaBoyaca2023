@@ -53,7 +53,7 @@
         }
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[4.511682692920946,-76.40562411412581],[6.425423950917686,-73.87302767636416]]);
+        }).fitBounds([[3.6377675624221606,-76.53700988953334],[8.72855133351866,-69.75359254950354]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -117,7 +117,7 @@
         }
 
         function style_Municipios_1_0(feature) {
-            if (feature.properties[' Área Sembrada (ha)'] >= 0.000000 && feature.properties[' Área Sembrada (ha)'] <= 39.600000 ) {
+            if (feature.properties[' Área Sembrada (ha)'] >= 0.000000 && feature.properties[' Área Sembrada (ha)'] <= 900.000000 ) {
                 return {
                 pane: 'pane_Municipios_1',
                 opacity: 1,
@@ -132,7 +132,7 @@
                 interactive: true,
             }
             }
-            if (feature.properties[' Área Sembrada (ha)'] >= 39.600000 && feature.properties[' Área Sembrada (ha)'] <= 86.160000 ) {
+            if (feature.properties[' Área Sembrada (ha)'] >= 900.000000 && feature.properties[' Área Sembrada (ha)'] <= 1800.000000 ) {
                 return {
                 pane: 'pane_Municipios_1',
                 opacity: 1,
@@ -143,11 +143,11 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(201,234,194,1.0)',
+                fillColor: 'rgba(213,239,207,1.0)',
                 interactive: true,
             }
             }
-            if (feature.properties[' Área Sembrada (ha)'] >= 86.160000 && feature.properties[' Área Sembrada (ha)'] <= 225.600000 ) {
+            if (feature.properties[' Área Sembrada (ha)'] >= 1800.000000 && feature.properties[' Área Sembrada (ha)'] <= 2700.000000 ) {
                 return {
                 pane: 'pane_Municipios_1',
                 opacity: 1,
@@ -158,11 +158,11 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(123,199,124,1.0)',
+                fillColor: 'rgba(158,215,152,1.0)',
                 interactive: true,
             }
             }
-            if (feature.properties[' Área Sembrada (ha)'] >= 225.600000 && feature.properties[' Área Sembrada (ha)'] <= 348.480000 ) {
+            if (feature.properties[' Área Sembrada (ha)'] >= 2700.000000 && feature.properties[' Área Sembrada (ha)'] <= 3600.000000 ) {
                 return {
                 pane: 'pane_Municipios_1',
                 opacity: 1,
@@ -173,11 +173,26 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(42,146,75,1.0)',
+                fillColor: 'rgba(85,181,103,1.0)',
                 interactive: true,
             }
             }
-            if (feature.properties[' Área Sembrada (ha)'] >= 348.480000 && feature.properties[' Área Sembrada (ha)'] <= 1745.896000 ) {
+            if (feature.properties[' Área Sembrada (ha)'] >= 3600.000000 && feature.properties[' Área Sembrada (ha)'] <= 4500.000000 ) {
+                return {
+                pane: 'pane_Municipios_1',
+                opacity: 1,
+                color: 'rgba(82,82,82,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(29,134,65,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties[' Área Sembrada (ha)'] >= 4500.000000 && feature.properties[' Área Sembrada (ha)'] <= 5400.000000 ) {
                 return {
                 pane: 'pane_Municipios_1',
                 opacity: 1,
@@ -208,7 +223,7 @@
         bounds_group.addLayer(layer_Municipios_1);
         map.addLayer(layer_Municipios_1);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'Municipios<br /><table><tr><td style="text-align: center;"><img src="legend/Municipios_1_0400.png" /></td><td>0 - 40</td></tr><tr><td style="text-align: center;"><img src="legend/Municipios_1_40861.png" /></td><td>40 - 86</td></tr><tr><td style="text-align: center;"><img src="legend/Municipios_1_862262.png" /></td><td>86 - 226</td></tr><tr><td style="text-align: center;"><img src="legend/Municipios_1_2263483.png" /></td><td>226 - 348</td></tr><tr><td style="text-align: center;"><img src="legend/Municipios_1_34817464.png" /></td><td>348 - 1746</td></tr></table>': layer_Municipios_1,"OSM Standard": layer_OSMStandard_0,},{collapsed:false}).addTo(map);
+        L.control.layers(baseMaps,{'Municipios<br /><table><tr><td style="text-align: center;"><img src="legend/Municipios_1_09000.png" /></td><td>0 - 900</td></tr><tr><td style="text-align: center;"><img src="legend/Municipios_1_90018001.png" /></td><td>900 - 1800</td></tr><tr><td style="text-align: center;"><img src="legend/Municipios_1_180027002.png" /></td><td>1800 - 2700</td></tr><tr><td style="text-align: center;"><img src="legend/Municipios_1_270036003.png" /></td><td>2700 - 3600</td></tr><tr><td style="text-align: center;"><img src="legend/Municipios_1_360045004.png" /></td><td>3600 - 4500</td></tr><tr><td style="text-align: center;"><img src="legend/Municipios_1_450054005.png" /></td><td>4500 - 5400</td></tr></table>': layer_Municipios_1,"OSM Standard": layer_OSMStandard_0,},{collapsed:false}).addTo(map);
         setBounds();
         map.addControl(new L.Control.Search({
             layer: layer_Municipios_1,
